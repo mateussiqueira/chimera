@@ -1,0 +1,18 @@
+# IntelliJ related
+-*.iml
+-*.ipr
+-*.iws
+-.idea/
+.idea/
++.idea/**/workspace.xml
++.idea/**/tasks.xml
++.idea/**/usage.statistics.xml
++.idea/**/dictionaries
++.idea/**/shelf
++.idea/**/libraries
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.dart_tool/
+**/pubspec.lock
+pubspec_overrides.yaml
+melos_chimera.iml

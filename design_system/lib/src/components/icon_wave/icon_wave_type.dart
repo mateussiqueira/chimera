@@ -1,0 +1,4 @@
+enum IconWaveType {
+  danger,
+  info,
+}

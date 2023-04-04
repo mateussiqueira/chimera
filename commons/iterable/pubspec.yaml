@@ -1,0 +1,34 @@
+name: iterable
+description: Iterable SDK Handler
+version: 1.2.0
+publish_to: none
+homepage: https://grupoq.io/
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  generic_exception:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: generic_exception-v1.0.6
+      path: commons/generic_exception
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  plugin:
+    platforms:
+      android:
+        pluginClass: IterablePlugin
+        package: io.grupoq.iterable
+      ios:
+        pluginClass: IterablePlugin

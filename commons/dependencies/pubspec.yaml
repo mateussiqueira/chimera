@@ -1,0 +1,88 @@
+name: dependencies
+description: Common dependencies manager
+version: 2.0.0
+publish_to: none
+homepage: https://grupoq.io/
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  alligator:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: alligator-v2.0.0
+      path: commons/alligator
+  authentication:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: authentication-v2.0.0
+      path: authentication
+  configuration:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: configuration-v1.1.0
+      path: commons/configuration
+  connection:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: connection-v2.0.0
+      path: commons/connection
+  extensions:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: extensions-v1.0.6
+      path: commons/extensions
+  internationalization:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: internationalization-v1.1.0
+      path: commons/internationalization
+  route66:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: route66-v1.1.0
+      path: commons/route66
+  marcopolo:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: marcopolo-v1.1.0
+      path: commons/marcopolo    
+  share:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: share-v1.1.0
+      path: commons/share
+  equatable: ^2.0.5
+  faker: ^2.0.0
+  firebase_core: ^2.7.0
+  firebase_crashlytics: ^3.0.15
+  flutter:
+    sdk: flutter
+  generic_exception:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: generic_exception-v1.0.6
+      path: commons/generic_exception
+  intl: ^0.17.0
+  mocktail: ^0.3.0
+  in_app_review: ^2.0.6
+  storage:
+     git:
+      url: https://github.com/qcx/chimera.git
+      ref: storage-v1.1.0
+      path: commons/storage
+  system_info:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: system_info-v2.0.0
+      path: commons/system_info
+  test:
+  collection: ^1.17.0
+dev_dependencies:
+  flutter_lints: ^2.0.1
+  flutter_test:
+    sdk: flutter
+
+flutter:

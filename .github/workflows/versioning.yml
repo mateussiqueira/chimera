@@ -1,0 +1,36 @@
+name: Chimera Versioning
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  versioning:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Chimera
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Configure Git Credentials
+        uses: oleksiyrudenko/gha-git-credentials@v2-latest
+        with:
+          token: '${{ secrets.GITHUB_TOKEN }}'
+
+      - name: Install Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+          cache-key: 'flutter-:os:-:channel:-:version:-:arch:-:hash:'
+
+      - name: Install Melos
+        run: dart pub global activate melos
+
+      - name: Run Melos Version
+        run: melos version --all --yes
+        
+      - name: Push versions to repository
+        run: git push --follow-tags

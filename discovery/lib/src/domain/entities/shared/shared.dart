@@ -1,0 +1,9 @@
+export 'category_entity.dart';
+export 'content_kind.dart';
+export 'info_entity.dart';
+export 'instructor_entity.dart';
+export 'max_installments_entity.dart';
+export 'media_entity.dart';
+export 'price_entity.dart';
+export 'product_entity.dart';
+export 'productable_entity.dart';

@@ -1,0 +1,19 @@
+import 'package:design_system/design_system.dart';
+
+import '../../button_size.dart';
+import '../../button_type.dart';
+import '../secondary_button_with_icon.dart';
+
+class SecondaryButtonIconXl extends SecondaryButtonWithIcon {
+  SecondaryButtonIconXl({
+    super.key,
+    super.onPressed,
+    super.semanticLabel,
+    required Icons icon,
+    super.autofocus = false,
+    super.clipBehavior = Clip.none,
+    super.buttonSize = ButtonSize.sizeXl,
+    super.buttonType = ButtonType.iconOnly,
+    super.backgroundColor,
+  }) : super(leadingIcon: icon);
+}

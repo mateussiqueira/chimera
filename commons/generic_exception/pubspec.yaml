@@ -1,0 +1,25 @@
+name: generic_exception
+description: Generic exception entity.
+version: 1.0.6
+publish_to: none
+homepage: https://grupoq.io/
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  internationalization:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: internationalization-v1.1.0
+      path: commons/internationalization
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^2.0.1
+  flutter_test:
+    sdk: flutter
+
+flutter:

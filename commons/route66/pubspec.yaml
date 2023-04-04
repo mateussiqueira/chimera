@@ -1,0 +1,41 @@
+name: route66
+description: Navigation within an app and between micro apps
+version: 1.1.0
+publish_to: none
+homepage: https://grupoq.io/
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  collection: ^1.17.0
+  core:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: core-v2.0.0
+      path: core
+  dependencies:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: dependencies-v2.0.0
+      path: commons/dependencies
+  cart:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: cart-v1.0.6
+      path: commons/cart    
+  design_system:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: design_system-v2.0.0
+      path: design_system
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+
+flutter:

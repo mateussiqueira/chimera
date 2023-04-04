@@ -1,0 +1,46 @@
+name: learning
+description: MicroFrontEnd do OPX
+version: 2.0.0
+publish_to: none
+homepage: https://grupoq.io/
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  certificates:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: certificates-v1.0.6
+      path: commons/certificates
+  core:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: core-v2.0.0
+      path: core
+  courses:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: courses-v1.1.0
+      path: commons/courses
+  dependencies:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: dependencies-v2.0.0
+      path: commons/dependencies
+  design_system:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: design_system-v2.0.0
+      path: design_system
+  flutter:
+    sdk: flutter
+  scroll_to_index: ^3.0.1
+
+dev_dependencies:
+  flutter_lints: ^2.0.1
+  flutter_test:
+    sdk: flutter
+
+flutter:

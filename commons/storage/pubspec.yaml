@@ -1,0 +1,25 @@
+name: storage
+description: Shared Preferences.
+version: 1.1.0
+publish_to: none
+homepage: https://grupoq.io/
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_secure_storage:
+  shared_preferences:
+  
+dev_dependencies:
+  flutter_lints: ^2.0.1
+  flutter_test:
+    sdk: flutter
+  faker:
+  mocktail:
+  test:
+
+flutter:

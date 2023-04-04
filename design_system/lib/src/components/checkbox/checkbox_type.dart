@@ -1,0 +1,4 @@
+enum CheckboxType {
+  checkbox,
+  radioButton,
+}

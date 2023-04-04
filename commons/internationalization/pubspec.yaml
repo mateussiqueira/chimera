@@ -1,0 +1,25 @@
+name: internationalization
+description: OPX Internationalization module.
+version: 1.1.0
+publish_to: none
+homepage: https://grupoq.io/
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  dependencies:
+    git:
+      url: https://github.com/qcx/chimera.git
+      ref: dependencies-v2.0.0
+      path: commons/dependencies
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+
+flutter:

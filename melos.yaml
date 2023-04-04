@@ -1,0 +1,49 @@
+name: chimera
+
+repository: https://github.com/qcx/chimera
+
+packages:
+  - authentication
+  - commons/*
+  - core
+  - design_system
+  - learning
+  - discovery
+  - checkout
+  - profile
+  - storybook
+
+command:
+  bootstrap:
+    runPubGetInParallel: false
+
+  version:
+    updateGitTagRefs: true
+
+scripts:
+  lint:all:
+    run: melos run analyze && melos run format
+    description: Run all static analysis checks.
+
+  analyze:
+    # We are setting the concurrency to 1 because a higher concurrency can crash
+    # the analysis server on low performance machines (like GitHub Actions).
+    run: |
+      melos exec -c 1 -- \
+        flutter analyze . --fatal-infos
+    description: |
+      Run `dart analyze` in all packages.
+       - Note: you can also rely on your IDEs Dart Analysis / Issues window.
+
+  format:
+    run: |
+      dart format .
+
+  test:
+    run: |
+      melos exec -c 6 --fail-fast -- \
+        "flutter test --no-pub"
+    description: Run `flutter test` for a specific package.
+    select-package:
+      dir-exists:
+        - test
